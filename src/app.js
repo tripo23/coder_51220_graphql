@@ -47,5 +47,5 @@ app.all("*", (req, res) => res.status(200).send('Este servidor opera con Graphql
 
 app.listen(process.env.APP_PORT, () => {
     mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-    console.log(`Server running on port ${process.env.APP_PORT}`);
+    console.log(`Server running OK on port ${process.env.APP_PORT}`);
 });
